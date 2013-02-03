@@ -1,6 +1,6 @@
 {
   "name": "Forrst Alerts",
-  "version": "0.3",
+  "version": "0.3.5",
   "description":
     "Show forrst notifications as Desktop notifications.",
   "icons": {"16": "img/16.png", "48": "img/48.png", "128": "img/128.png"},

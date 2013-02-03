@@ -11,7 +11,11 @@ window.addEventListener('load', function() {
   options = document.forms.options;
   console.log( options );
   if( localStorage.username != undefined ){
-    options.frequency.value = localStorage.frequency;
+    if( localStorage.frequency != undefined ){
+      options.frequency.value = localStorage.frequency;
+    }else{
+      options.frequency.value = 5;
+    }
     options.username.value = localStorage.username;
     options.token.value = (localStorage.token.length > 5 ) ? 'Authenticated' : 'Invalid';
   }
@@ -32,7 +36,6 @@ function validate_account( user , password ){
         result = JSON.parse( xhr.responseText );
         localStorage.username = options.username.value;
         localStorage.token = result.resp.token;
-        window.location.reload();
       } else {
         localStorage.clear;
         options.username.value = '';
