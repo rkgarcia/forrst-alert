@@ -1,0 +1,14 @@
+{
+  "name": "Forrst Alerts",
+  "version": "0.3",
+  "description":
+    "Show forrst notifications as Desktop notifications.",
+  "icons": {"16": "img/16.png", "48": "img/48.png", "128": "img/128.png"},
+  "permissions": ["notifications","https://forrst.com/"],
+  "options_page": "options.html",
+  "background": { "scripts": ["background.js"] },
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "img/48.png"
+  ]
+}

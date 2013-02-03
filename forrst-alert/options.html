@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Forrst Notification System</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="options.js"></script>
+  </head>
+  <body>
+    <h1>
+      <img src="img/64.png" alt="Toast">
+      Forrst Notifications
+    </h1>
+    <h2>Options</h2>
+    <form id="options" name="options">
+      <p>
+        <label>Username or Email</label>
+        <input type="text" name="username" placeholder="Username in Forrst" />
+      </p>
+      <p>
+        <label>Token</label>
+        <input type="text" name="token" disabled="disabled" />
+      </p>
+      <p>
+        <label>Query for new notifications every</label>
+        <select name="frequency">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>10</option>
+          <option>15</option>
+          <option>20</option>
+          <option>25</option>
+          <option>30</option>
+        </select>
+        minute(s).
+      </p>
+    </form>
+  </body>
+</html>
